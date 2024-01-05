@@ -1,0 +1,101 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(241, 189, 241);
+    background-image: url("background-pattern-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content:center;
+    min-height: 100vh;
+    font-family: 'Work sans', 'sanserif';
+    
+}
+
+.accordian-btn
+{
+    cursor:pointer;
+    background-color: transparent;
+    width:100%;
+    padding:1rem ;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    border:0;
+
+
+}
+
+button:hover{
+   color: rgb(243, 210, 243);
+}
+
+.container
+{
+    background-color: white;
+    max-width: 800px;
+    padding:1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+   
+}
+
+.starfaq
+{
+    display: flex;
+    gap:2rem;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.accordian-container .accordian-item:not(:last-child)
+{
+    border-bottom: 2px solid rgb(243, 210, 243);
+}
+
+.icons
+{
+    min-width: 30px;
+}
+
+.minus-icon
+{
+    display: none;
+}
+
+
+.accordian-description
+{
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 200ms ease;
+padding-left:15px;
+margin-bottom:5px
+}
+
+@media(max-width:540px)
+{
+body{
+ background-image: url("background-pattern-mobile.svg");    
+}
+}
+.ksbr
+{
+    font-size: x-small;
+    text-align: center;
+    
+}
